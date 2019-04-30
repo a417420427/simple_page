@@ -35,7 +35,7 @@ export default {
                     password: this.password
                 }
             }).then(res => {
-                if(res.data.error) {
+                if(!res.data.error) {
                     this.$message({
                         type: 'success',
                         message: '注册成功'
